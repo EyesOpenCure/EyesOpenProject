@@ -27,9 +27,10 @@ EYS will be expressed in cell cultures, purified by affinity chromatography, pla
 
 Although initial experiments will outsource protein production, a His-tagged EYS expression vector and CRISPR gRNA will be obtained from Genscript. () The expression vector and Cas9 enzymes will be electroporated into HEK293 cells, and stable transfection will be selected for by screening with methotrexate.  EYS will be filtered from cell lysate by affinity chromatography, before having its tag cleaved away with a protease.  The protein will then be dialyzed into the final delivery vehicle solution, filtering out the protease in the process.
 
-At a molecular weight of ... kDA, () EYS is a large macromolecule.  Accounting for this, the delivery vehicle forumulation for large anti-VEGF biologics like bevacizumab will be copied. ()
+At a molecular weight of ... kDA, () EYS is a large macromolecule.  Accounting for this, the delivery vehicle will mimic the vehicle formulation for large anti-VEGF biologics like bevacizumab. () Commercial bevacizumab (avastin) uses a polysorbate 20 detergent to allow for better macromolecule penetration of the retina. ()  Additionally, since heparan-sulfate proteoglycans are highly negatively charged, () EYS may be able to more readily diffuse throughout the vitrous and retina than it otherwise would. () Finally, as a large macromolecule, intraocular EYS should benefit from a longer resident time, owing to its inability to leave the eye through the choroidal route. ()
 
 ### Pharmokinetic Proof of Concept
+The pharmokinetic aspects of EYS will first be investigated to determine a feasible delivery route to the retina outer segment.  Purified green fluorescent protein (GFP)-tagged EYS will be purchased from Genscript, () and then injected into the vitreal chamber of wild type *Danio rerio* animal models.  24 hours later the fish retinas will be cryosectioned and examined for fluorescent EYS activity under the microscope.  If the GFP-tagged EYS successfully localizes to the retina outer segment, then work will proceed to the next phase, otherwise more challenging subretinal injections will be pursued instead.
 
 ### Retinal Dystrophy Model Proof of Concept
 
