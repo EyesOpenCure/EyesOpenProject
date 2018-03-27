@@ -4,13 +4,15 @@
 
 ## Introduction
 
-Eyes Shut Homolog (EYS) is a secreted proteoglycan of the extracellular matrix that is important for the development and maintenance of retinal photoreceptors throughout much of the animal kingdom. (1) The protein derives its name from the fact that Drosophila hatched without functioning EYS fail to develop open rhabdomeres. (2) EYS has a secondary role in Drosophila of protecting mechanoreceptors from damage due to oncotic pressure. (3) In vertebrates such as humans, this protective role of EYS is conserved, in which it is localized in the retina outer segment (OS), spinal cord, and dorsal root ganglia to protect from damage due to oncotic pressure and other environmental insults. (4)
+Eyes Shut Homolog (EYS) is a secreted proteoglycan of the extracellular matrix that is important for the development and maintenance of retinal photoreceptors throughout much of the animal kingdom. (1) The protein derives its name from the fact that Drosophila hatched without functioning EYS fail to develop open rhabdomeres. (2) EYS has a secondary role in Drosophila of protecting mechanoreceptors from damage due to osmotic pressure. (3) In vertebrates such as humans, this protective role of EYS is conserved, in which it is localized in the retina outer segment (OS), spinal cord, and dorsal root ganglia to protect from damage due to hyperosmotic shock and other environmental insults. (4)
 
-In humans, loss of EYS function is the etiologic cause of both retinitis pigmentosa type 25 (RP25) and autosomal-recessive cone-rod dystrophy (arCRD). () In these diseases, lack of EYS causes generalized and progressive photoreceptor dysfunction, affecting both rod and cone photoreceptors. ()
+In humans, loss of EYS function is the etiologic cause of both retinitis pigmentosa type 25 (RP25) and autosomal-recessive cone-rod dystrophy (arCRD). () In these diseases, lack of EYS causes generalized and progressive photoreceptor dysfunction, affecting both rod and cone photoreceptors. () RP25 and arCRD affected photoreceptors exhibit progressive mislocalization of outer segment organelles. () Secreted EYS selectively binds to cells decorated with prominin-1 surface receptors, such as those found in the outer segment, which it mechanically reinforces by depositing a protective cell wall. () 
 
 ## Proposed Role as a Therapeutic
 ### Treating Retinal Dystrophy
-Among causes of retinal dystrophy, EYS is unique in that it is secreted extracellularly, () which makes it an excellent candidate for protein replacement therapy. RP25 and arCRD 
+Among causes of retinal dystrophy, EYS is unique in that it is secreted extracellularly, () which makes it an excellent candidate for protein replacement therapy. By replacing EYS using intraocular injections, it may be possible to halt further progression of RP25 and arCRD by preventing additional damage from osmotic forces.  Additionally, EYS replacement may be able to relocalize outer segment organelles by restoring the shape of the outer segment, thus rescuing inoperative photoreceptors.
+
+Both RP25 and arCRD exhibit strongly autosomal recessive inheritance patterns, () indicating that mutant EYS is not directly toxic and only total loss of function is harmful.  
 
 ### Repairing Damage Due to Retinal Injury
 EYS is closely related to the heparan-sulfate extracellular matrix proteins perlecan and agrin, () which have been shown to have profound tissue regeneration properties.  Agrin has been demonstrated to regenerate the hearts of mice that had suffered from myocardial infarction over the course of a month after just a single injection of the protein. ()  Similarly, perlecan has been found to ...
@@ -31,7 +33,13 @@ Agrin, perlecan, and EYS each contain multiple epidermal growth factor-like (EGF
 ## References
 
 
-() 
+(1)  
+
+(2) https://www.ncbi.nlm.nih.gov/pubmed/18297055
+
+(3) https://www.ncbi.nlm.nih.gov/pubmed/17011488/
+
+(4) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175321/
 
 () https://www.ncbi.nlm.nih.gov/pubmed/18024432/ angiostatic
 
