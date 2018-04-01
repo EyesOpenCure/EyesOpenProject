@@ -19,7 +19,10 @@ EYS is closely related to the heparan-sulfate extracellular matrix proteins perl
 
 Agrin and perlecan are both implicated in animal tissue development, but get downregulated with age leading to a corresponding decline in animal tissue's ability to repair itself. () Since EYS is known to be involved in the development of retinal tissue, () it may possess similar regenerative properties to perlecan and agrin.  Retinal injuries, such as those due to retinal vein occlusions and infectious uveitis, can lead to rapid and lasting damage to vision. () EYS replacement may serve as a potential treatment option for such cases by stimulating tissue regeneration and repair after damage has already occurred.
 
-Agrin, perlecan, and EYS each contain multiple epidermal growth factor-like domains, () indicating important roles in the notch signalling pathway. ()  In the context of the retina, this would immediately raise concerns of promoting harmful angiogenesis and neovascularization, however the protein cores of these proteoglycans have been demonstrated to possess special angiostatic properties. (,)   Given that EYS is naturally designed to function in the retina, it is likely possesses similar angiostatic properties to prevent neovascularization due to its presence.
+
+Agrin, perlecan, and EYS each contain multiple epidermal growth factor-like domains, () indicating important roles in the notch signalling pathway. () EYS 
+
+In the context of the retina, these EGF-like domains would immediately raise concerns of replaced EYS promoting harmful angiogenesis and neovascularization, however the protein cores of EYS-related proteoglycans have been demonstrated to possess special angiostatic properties. (,)   Given that EYS is naturally expressed in the retina, the protein likely possesses similar angiostatic properties to prevent it from neovascularizing retinal tissue.
 
 ## Proposed Methods
 ### Protein Expression and Formulation
@@ -34,7 +37,11 @@ The pharmokinetic aspects of EYS will first be investigated to determine a feasi
 
 ### Retinal Dystrophy Model Proof of Concept
 
-The therapeutic potential of EYS replacement will be assessed using modified *Danio rerio* models.
+The therapeutic potential of EYS replacement will be assessed using modified *Danio rerio* models.  Fertilized zebrafish eggs will be obtained from Carolina Scientific () and then subjected to CRISPR/Cas9 gene knockout of EYS using the protocol described by ().  ___ et al have shown detectable levels of EYS-mediated retinal degeneration in *Danio rerio* models within the first month post-fertilization.  Therefore, subjects will be allowed to mature for 21 days before the experiment sequence begins.
+
+Subjects will be separated into four groups: sham injection control, __ ug dosage, __ ug dosage, and __ ug dosage.  Retinal function will be noninvasively measured via electroretinogram (ERG) at 1, 7, 14, and 28 following the administration of intraocular EYS.  EYS loss of function causes generalized dysfunction of both rods and cones, () so subjects will be exposed to photopic white flashes during retinal function evaluation.
+
+The dose-time-amplitude relationship will be explored.  ERG amplitudes will be simultaneously plotted against dose level elapsed days since dose administration.  This will better inform subsequent experiments about appropriate dose level and interval.
 
 ## Humanitarian and Business Cases
 
@@ -42,12 +49,19 @@ The therapeutic potential of EYS replacement will be assessed using modified *Da
 
 
 (1) 
+
 (2) https://www.ncbi.nlm.nih.gov/pubmed/18297055
+
 (3) https://www.ncbi.nlm.nih.gov/pubmed/17011488/
+
 (4) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175321/
+
 (5) https://www.ncbi.nlm.nih.gov/pubmed/18836446/
+
 (6) https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5155541/
+
 (7) https://www.nature.com/articles/srep46098
+
 (8) 
 
 
