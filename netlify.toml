@@ -1,0 +1,7 @@
+[build]
+  base    = "website"
+  publish = "website/dist"
+  command = "npm run generate"
+  
+[context.production]
+  NODE_ENV = "production"
