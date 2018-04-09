@@ -1,0 +1,32 @@
+{
+  "name": "website",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "bulma": "^0.6.2",
+    "html-loader": "^0.5.5",
+    "markdown-loader": "^2.0.2",
+    "marked": "^0.3.19",
+    "nord": "^0.2.1",
+    "nuxt": "^1.4.0",
+    "open-color": "^1.6.3"
+  },
+  "devDependencies": {
+    "glob-all": "^3.1.0",
+    "node-sass": "^4.8.3",
+    "optimize-css-assets-webpack-plugin": "^4.0.0",
+    "purgecss-webpack-plugin": "^0.22.0",
+    "sass-loader": "^6.0.7",
+    "webpack": "^3.11.0"
+  }
+}
