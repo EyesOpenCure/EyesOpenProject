@@ -77,7 +77,8 @@ module.exports = {
 							path.join(__dirname, './layouts/**/*.vue'),
 							path.join(__dirname, './components/**/*.vue')
 						]),
-						whitelist: ['html', 'body']
+						whitelist: ['html', 'body'],
+						whitelistPatterns: [/^\.(fade-enter|fade-leave)/]
 					})
 				)
 			}
