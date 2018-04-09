@@ -10,11 +10,11 @@
 //@import "~bulma/sass/base/_all.sass";
 
 
-
+/* purgecss ignore */
 .fade-leave-active, .fade-enter-active {
   transition: all 0.25s ease-out;
 }
-
+/* purgecss ignore */
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
