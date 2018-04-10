@@ -13,7 +13,7 @@
             OpenEYS Project
           </div>
           <div class="project-text__subtitle">
-            Ocular EYS Replacement for RP25 and<br>Other Acquired Retinal Injuries
+            Ocular EYS Replacement for RP25<br> and Other Retinal Diseases
           </div>
         </div>
       </div>
@@ -22,13 +22,13 @@
       <div class="info-entry has-text-right-tablet has-text-centered-mobile">
         <div class="info-entry__text">
           <div class="info-entry__text-headline">
-            Title
+            EYS is an extracellular protein
           </div>
           <div class="info-entry__text-description">
             <ul>
-              <li>Proin tempus ullamcorper porta.</li>
-              <li>Fusce et massa fermentum, ultricies lectus ac, tempor eros.</li>
-              <li>In laoreet dui at aliquam malesuada.</li>
+              <li>People with RP25 cannot produce functioning EYS, leading to blindness.</li>
+              <li>We plan to grow EYS in genetically modified cell cultures.</li>
+              <li>The purified protein can then be injected into the vitreous and diffuse into the retina.</li>
             </ul>
           </div>
         </div>
@@ -39,13 +39,13 @@
         <img class="info-entry__image is-hidden-mobile" src="https://via.placeholder.com/256x256?text=Placeholder">
         <div class="info-entry__text">
           <div class="info-entry__text-headline">
-            Title
+            EYS is a growth factor
           </div>
           <div class="info-entry__text-description">
             <ul>
-              <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-              <li>Nullam fermentum ligula ac sodales facilisis.</li>
-              <li>Mauris hendrerit eros vel rhoncus viverra. Proin in lorem lectus.</li>
+              <li>This protein belongs to a class of wound-healing growth factors, similar to perlecan and grin.</li>
+              <li>The proteins have the ability to profoundly regenerate tissue in response to injury.</li>
+              <li>We hope to demonstrate the ability to regenerate retinal tissue and treat other retinal diseases.</li>
             </ul>
           </div>
         </div>
