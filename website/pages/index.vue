@@ -43,9 +43,9 @@
           </div>
           <div class="info-entry__text-description">
             <ul>
-              <li>EYS belongs to a class of wound-healing growth factors.</li>
-              <li>These proteins can profoundly regenerate tissue after injury.</li>
-              <li>We hope to show retinal tissue regeneration beyond RP25.</li>
+              <li>EYS belongs to a class of wound-healing poteins.</li>
+              <li>These proteins can regenerate tissue after injury.</li>
+              <li>We hope to show retinal tissue repair outside RP25.</li>
             </ul>
           </div>
         </div>
