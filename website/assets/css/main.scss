@@ -2,19 +2,38 @@
 
 //@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Lato|Open+Sans|Raleway|Roboto|Roboto+Mono|Source+Code+Pro|Ubuntu+Mono');
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,700');
 
 @import "variables.scss";
 @import "~bulma/bulma.sass";
 //@import "~bulma/sass/layout/section.sass";
 //@import "~bulma/sass/base/_all.sass";
-
-
-
-.fade-leave-active, .fade-enter-active {
+/*
+.transition-page-leave-active, .transition-page-enter-active {
   transition: all 0.25s ease-out;
 }
 
-.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+.transition-page-enter, .transition-page-leave-to{
+  opacity: 0;
+}
+*/
+
+.component{
+  min-height: 100%;
+}
+
+.transition-page-enter-active {
+  transition: all 0.33s ease;
+}
+
+.transition-page-leave-active {
+  transition: all 0.33s ease;
+}
+
+.transition-page-enter{
+  opacity: 0;
+}
+
+.transition-page-leave-to{
   opacity: 0;
 }

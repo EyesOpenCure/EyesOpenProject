@@ -61,21 +61,24 @@
 export default {
 	data: () => ({
 		lorem: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum ligula ac sodales facilisis. Mauris hendrerit eros vel rhoncus viverra. Proin in lorem lectus."
-	}),
-	components: {
-		
-	},
-	mounted(){
-		
-	}
+	})
 }
 </script>
 
 <style lang="scss" scoped>
 @import "~assets/css/variables.scss";
 
+.transition-page-enter-active {
+  transition: all 0.66s ease;
+}
+
+.transition-page-leave-active {
+  transition: all 0.66s ease;
+}
+
 .component{
-	position: relative;
+	background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: $oc-gray-2;
 }
 
 .background{
@@ -138,7 +141,6 @@ export default {
 		//filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
 		&__title{
 			//background: white;
-			font-family: "Raleway";
 			font-weight: 300;
 			@include mobile{
 				font-size: 2rem;
