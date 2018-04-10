@@ -27,7 +27,7 @@
           <div class="info-entry__text-description">
             <ul>
               <li>Nonfunctional EYS leads to blindness (RP25).</li>
-              <li>We plan to grow EYS in GM cell cultures.</li>
+              <li>We plan to grow EYS in modified cell cultures.</li>
               <li>The protein can then be injected into the eye.</li>
             </ul>
           </div>
@@ -43,9 +43,9 @@
           </div>
           <div class="info-entry__text-description">
             <ul>
-              <li>EYS controls wound-healing, similar to perlecan and agrin.</li>
+              <li>EYS belongs to a class of wound-healing growth factors.</li>
               <li>These proteins can profoundly regenerate tissue after injury.</li>
-              <li>We hope to demonstrate general retinal tissue regeneration as well.</li>
+              <li>We hope to show retinal tissue regeneration beyond RP25.</li>
             </ul>
           </div>
         </div>
