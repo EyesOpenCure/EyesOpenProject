@@ -3,10 +3,10 @@
     <div class="section">
       <div class="container">
         <p>
-	  We are a group of internet volunteers from a diverse range of academic backgrounds, brought together by the common goal of treating blindness. We are not doing this because we expect that this will be an easy problem to solve, but rather because we think it is a worthwhile problem that deserves a fresh approach. We have new ideas, we are resourceful, and most of all we are very motivated.
+	  We are a group of internet volunteers from a diverse range of academic backgrounds, brought together by the common goal of treating blindness. We are not doing this because we expect that this will be an easy problem to solve, but rather because we think it is a worthwhile problem that deserves a fresh approach. We are resourceful, we have new ideas, and most of all we are very motivated.
 	</p>
         <p>
-	  Whether you have a background in biology, chemistry, physics, engineering, or even are just casually interested in the project, we would love your help. Let's do this together.
+	  Whether you have a background in biology, chemistry, physics, engineering, or even are just casually interested in the project, we would love your help. Let's cure blindness together.
 	</p>
       </div>
     </div>
