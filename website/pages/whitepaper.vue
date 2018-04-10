@@ -48,6 +48,7 @@ export default {
 }
 
 .content{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	margin-top: 1rem;
 	@include tablet{
 		padding: 2rem;
