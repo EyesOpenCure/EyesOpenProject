@@ -47,6 +47,8 @@ export default {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	max-width: 800px;
+	font-size: 1.125em;
 }
 
 p{
