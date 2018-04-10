@@ -1,6 +1,7 @@
 # Ocular EYS Replacement for RP25 and Other Acquired Retinal Injuries
 
 ## Abstract
+EYS is an extracellular matrix-associated growth factor that is specific the outer segment of the vertebrate retina.  EYS is crucial for outer segment morphogenesis, maintenenance, and renewal, and loss of EYS function results in RP25/ arCRD, eventually leading to blindness.  In addition to its known abilities to reinforce against osmotic shock and antagonize membrane-membrane adhesion, we propose that EYS also retains the notch-signalling growth factor properties of its paralogs, perlecan and agrin.  Further, we propose a series of experiments to demonstrate the possibility of treating EYS-mediated retinal disease using intravitreal EYS replacement in zebrafish models.  Future work may also demonstrate EYS-stimulated retinal tissue regeneration, allowing the protein to treat many forms of vision loss.
 
 ## Introduction
 
@@ -9,10 +10,15 @@ Eyes Shut Homolog (EYS) is a secreted proteoglycan of the extracellular matrix t
 In humans, loss of EYS function is the etiologic cause of both retinitis pigmentosa type 25 (RP25) and autosomal-recessive cone-rod dystrophy (arCRD). (5) In these diseases, lack of EYS causes generalized and progressive photoreceptor dysfunction, affecting both rod and cone photoreceptors. (6) RP25 and arCRD affected photoreceptors exhibit progressive mislocalization of outer segment organelles. (7) Secreted EYS selectively binds to cells decorated with prominin-1 surface receptors, such as those found in the outer segment, which it mechanically reinforces by depositing a protective cell wall. (3) 
 
 ## Proposed Role as a Therapeutic
-### Treating Retinal Dystrophy
-Among causes of retinal dystrophy, EYS is unique in that it is secreted extracellularly, () which makes it an excellent candidate for protein replacement therapy. By replacing EYS using intraocular injections, it may be possible to halt further progression of RP25 and arCRD by preventing additional damage from osmotic forces.  Additionally, EYS replacement may be able to relocalize outer segment organelles by restoring the shape of the outer segment, thus rescuing inoperative photoreceptors.
+As a secreted extracellular growth factor (), EYS is an excellent candidate for protein replacement therapy.  The recombinant protein will be grown in cell cultures, purified, and then administered ocularly, either by the intravitreal or subretinal routes.  
 
-Both RP25 and arCRD exhibit strongly autosomal recessive inheritance patterns, () indicating mutant EYS is not directly toxic and only total loss of function is harmful.  
+### Treating Retinitis Pigmentosa Type25
+EYS is intimately involved in the formation of fresh phototransducing discs in the outer segment of the retina.  As a matrix protein, EYS has important mechanical roles, including reinforcing photoreceptors against osmotic shock (), as well as antagonizing membrane-membrane adhesion to promote fresh disc formation. () This disc renewal process is happens continuously in healthy retinas, but without it the phototransduction proteins contained in the outer segment discs will wear out and begin to emit cytotoxic byproducts if not replaced.  The EYS paralogs perlecan and agrin have known roles in promoting cell proliferation via notch signalling, and we propose that EYS has retained a similar role in promoting outer segment disc proliferation.
+
+Both RP25 and arCRD exhibit strongly autosomal-recessive inheritence patterns, () indicating mutant EYS is not directly toxic and only total loss of function is harmful.  By replacing a functional version of EYS using intraocular injections, it may be possible to halt or even reverse the progression of RP25 and arCRD by restarting the disc formation process.  By replacing worn out discs, the accumulation of cytoxic phototransduction byproducts will likely cease.  Additionally, as a growth factor, EYS may be able to perform outer segment regeneration, thus rescuing inoperative photoreceptors that have degenerated to the point of losing their outer segments.
+
+### Treating Other Forms of Retinal Dystrophy
+
 
 ### Repairing Damage Due to Retinal Injury
 EYS is closely related to the heparan-sulfate extracellular matrix proteins perlecan and agrin, () which have been shown to have profound tissue regeneration properties.  Agrin has been demonstrated to regenerate the hearts of mice that had suffered from myocardial infarction over the course of a month after just a single injection of the protein. ()  Similarly, perlecan has been found to ...
@@ -30,10 +36,10 @@ EYS will be expressed in cell cultures, purified by affinity chromatography, pla
 
 Although initial experiments will outsource protein production, a His-tagged EYS expression vector and CRISPR gRNA will be obtained from Genscript. () The expression vector and Cas9 enzymes will be electroporated into HEK293 cells, and stable transfection will be selected for by screening with methotrexate.  EYS will be filtered from cell lysate by affinity chromatography, before having its tag cleaved away with a protease.  The protein will then be dialysed into the final delivery vehicle solution, filtering out the protease in the process.
 
-At a molecular weight of ... kDA, () EYS is a large macromolecule.  Accounting for this, the delivery vehicle will mimic the vehicle formulation for large anti-VEGF biologics like bevacizumab. () Commercial bevacizumab (avastin) uses a polysorbate 20 detergent to allow for better macromolecule penetration of the retina. ()  Additionally, since heparan-sulfate proteoglycans are highly negatively charged, () EYS may be able to more readily diffuse throughout the vitrous and retina than it otherwise would. () Finally, as a large macromolecule, intraocular EYS should benefit from a longer resident time, owing to its inability to leave the eye through the choroidal route. ()
+At a molecular weight of ... kDA, () EYS is a large macromolecule.  Accounting for this, the delivery vehicle will mimic the vehicle formulation for large anti-VEGF biologics like bevacizumab. () Commercial bevacizumab (avastin) uses a polysorbate 20 detergent to allow for better macromolecule penetration of the retina. ()  Additionally, since heparan-sulfate proteoglycans are highly negatively charged, () EYS may be able to more readily diffuse throughout the vitreous and retina than it otherwise would. () Finally, as a large macromolecule, intraocular EYS should benefit from a longer resident time, owing to its inability to leave the eye through the choroidal route. ()
 
 ### Pharmokinetic Proof of Concept
-The pharmokinetic aspects of EYS will first be investigated to determine a feasible delivery route to the retina outer segment.  Purified green fluorescent protein (GFP)-tagged EYS will be purchased from Genscript, () and then injected into the vitreal chamber of wild type *Danio rerio* (zebrafish) animal models.  24 hours later the fish retinas will be cryosectioned and examined for fluorescent EYS activity under the microscope.  If the GFP-tagged EYS successfully localizes to the retina outer segment, then work will proceed to the next phase, otherwise more challenging subretinal injections will be pursued instead.
+The pharmokinetic aspects of EYS will first be investigated to determine a feasible delivery route to the retina outer segment.  Purified FLAG-tagged EYS will be purchased from Genscript, () and then injected into the vitreal chamber of wild type *Danio rerio* (zebrafish) animal models.  24 hours later the fish retinas will be cryosectioned and then fluorescently immunostained with anti-FLAG antibodies.  If microfluorescence imaging shows that the injected EYS has successfully localized to the retina outer segment, then work will proceed to the next phase, otherwise more challenging subretinal injections will be pursued instead.
 
 ### Retinal Dystrophy Model Proof of Concept
 
@@ -44,6 +50,7 @@ Subjects will be separated into four groups: sham injection control, __ ug dosag
 The dose-time-amplitude relationship will be explored.  ERG amplitudes will be simultaneously plotted against dose level elapsed days since dose administration.  This will better inform subsequent experiments about appropriate dose level and interval.
 
 ## Humanitarian and Business Cases
+
 
 ## References
 
