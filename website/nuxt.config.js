@@ -32,6 +32,11 @@ module.exports = {
 			mode: 'history'
 		},
 		/*
+		analyze: {
+			analyzerMode: 'static'
+		},
+		*/
+		/*
 		babel: {
 			plugins: ["syntax-dynamic-import","transform-object-rest-spread"],
 			presets: [
@@ -67,7 +72,7 @@ module.exports = {
 				],
 				exclude: /(node_modules)/
 			})
-			if (!isDev) {
+			if (true) { // need to have this for testing for now
 				// Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
 				// for more information about purgecss.
 				config.plugins.push(
@@ -78,9 +83,10 @@ module.exports = {
 							path.join(__dirname, './components/**/*.vue')
 						]),
 						whitelist: ['html', 'body'],
-						whitelistPatterns: [/^(fade-enter|fade-leave).+/]
+						whitelistPatterns: [/^transition-page.+/]
 					})
 				)
+				//config.plugins.push(new OptimizeCssAssetsPlugin())
 			}
 		},
 		/*
@@ -102,8 +108,8 @@ module.exports = {
 		extractCSS: true
 	},
 	transition: {
-		name: 'fade',
-		mode: 'out-in'
+		name: 'transition-page',
+		//mode: null,
 	},
 	loading: false,
 	//extractCSS: true

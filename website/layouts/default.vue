@@ -21,11 +21,10 @@ export default{
 .default-template {
   position: relative;
   min-height: 100vh;
-	font-family: "Raleway", sans-serif;
-  background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  //background-image: linear-gradient(to right, #243949 0%, #517fa4 100%);
-  //background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  color: $oc-gray-2;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  background-attachment: fixed;
+  color: $oc-gray-7;
   display: flex;
   flex-direction: column;
 	overflow: hidden;
@@ -44,6 +43,5 @@ export default{
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  //filter: blur(0);
 }
 </style>

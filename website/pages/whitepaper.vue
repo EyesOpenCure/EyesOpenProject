@@ -2,10 +2,7 @@
   <div class="component">
     <div class="section">
       <div class="container">
-        <div class="git-link">
-          <a href="https://github.com/EyesOpenCure/EyesOpenProject/blob/master/Whitepaper.md">This Whitepaper on GitHub</a>
-          <hr>
-        </div>
+        <a class="git-link" href="https://github.com/EyesOpenCure/EyesOpenProject/blob/master/Whitepaper.md">This Whitepaper on GitHub</a>
         <div class="content" v-html="whitepaperHTML"/>
       </div>
     </div>
@@ -32,23 +29,31 @@ export default {
 <style lang="scss" scoped>
 @import "~assets/css/variables.scss";
 
-.component{
-	background: $oc-gray-0;
-	font-family: "Raleway", sans-serif;
-	color: $oc-gray-7;
-}
-
 .section{
 	flex-grow: 1;
 	text-align: left;
 }
 
 .container{
-	max-width: 800px;
+	max-width: 864px;
 }
 
 .git-link{
 	font-family: monospace;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	@include tablet{
+		padding: 1rem;
+		margin: 1rem;
+	}
+}
+
+.content{
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+	margin-top: 1rem;
+	@include tablet{
+		padding: 2rem;
+		background: #fafafa;
+		box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+	}
 }
 </style>

@@ -171,7 +171,7 @@ a{
 		}
 	}
 
-	&.router-link-exact-active{
+	&.nuxt-link-exact-active{
 		color: $oc-gray-0;
 		>.link-text::after{
 			opacity: 1;
