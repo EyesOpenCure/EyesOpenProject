@@ -50,8 +50,8 @@ export default {
 .content{
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 	margin-top: 1rem;
-	text-align: justify;
 	@include tablet{
+		text-align: justify;
 		padding: 2rem;
 		background: #fafafa;
 		box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
