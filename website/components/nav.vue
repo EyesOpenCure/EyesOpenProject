@@ -13,7 +13,7 @@
         <span/>
         <span/>
       </div>
-      <div :class="{showTouchNav}" class="router-links">
+      <div :class="{showTouchNav}" class="router-links" @click="showTouchNav = false">
         <nuxt-link :to="'/'"><span class="link-text">Home</span></nuxt-link>
         <nuxt-link :to="'/whitepaper'"><span class="link-text">Whitepaper</span></nuxt-link>
         <nuxt-link :to="'/contribute'"><span class="link-text">Contribute</span></nuxt-link>
@@ -31,11 +31,13 @@ export default {
 		showTouchNav: false,
 		scrollPos : 0
 	}),
+	/*
 	watch: {
 		'$route' () {
 			this.showTouchNav = false
 		}
 	}
+	*/
 }
 </script>
 
