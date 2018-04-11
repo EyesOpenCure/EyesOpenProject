@@ -1,7 +1,6 @@
 <template>
   <div class="component">
-
-    
+		
     <div class="background"/>
     <div class="background-rainbow"/>
 
@@ -69,11 +68,11 @@ export default {
 @import "~assets/css/variables.scss";
 
 .transition-page-enter-active {
-  transition: all 0.66s ease;
+  transition: all 0.66s ease-out;
 }
 
 .transition-page-leave-active {
-  transition: all 0.66s ease;
+  transition: all 0.66s ease-in;
 }
 
 .component{
@@ -118,6 +117,9 @@ export default {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@include mobile{
+		padding: 0.5rem;
+	}
 }
 
 .project{
@@ -189,9 +191,10 @@ hr{
 	//line-height: 2;
 	>.info-entry__text{
 		>.info-entry__text-headline{
+			color: $oc-gray-2;
 			//font-size: 2rem;
 			@include mobile{
-				font-size: 1.5rem;
+				font-size: 1.25rem;
 			}
 			@include tablet{
 				font-size: 1.5rem;
@@ -201,9 +204,10 @@ hr{
 			}
 		}
 		>.info-entry__text-description{
+			color: $oc-gray-4;
 			//font-size: 1rem;
 			@include mobile{
-				font-size: 1rem;
+				font-size: 0.875rem;
 				line-height: 1.5;
 			}
 			@include tablet{

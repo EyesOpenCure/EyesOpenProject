@@ -23,11 +23,11 @@
 }
 
 .transition-page-enter-active {
-  transition: all 0.33s ease;
+  transition: all 0.33s ease-in;
 }
 
 .transition-page-leave-active {
-  transition: all 0.33s ease;
+  transition: all 0.33s ease-out;
 }
 
 .transition-page-enter{
