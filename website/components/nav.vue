@@ -89,6 +89,7 @@ export default {
 	font-weight: 500;
 	font-size: 1.5rem;
 	margin-left: 0.5rem;
+	color: $oc-gray-0;
 }
 
 .nav-spacer{
@@ -110,15 +111,16 @@ export default {
 		right: 0;
 		top: 100%;
 		width: 100%;
-		height: 100vh;
+		height: calc(100vh - 3rem);
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
 		background: rgba(82, 102, 122,1);
 		//box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
 		transform: translateY(-100%);
-		transition: transform 0s ease-out;
+		transition: transform 0.25s ease-in;
 		&.showTouchNav{
+			transition: transform 0.25s ease-out;
 			//display:flex;
 			transform: translateY(0);
 		}
@@ -149,6 +151,7 @@ a{
 	>.link-text{
 		position: relative;
 		font-size: 1.25rem;
+		line-height: 1;
 		@include touch{
 			font-size: 1.5rem;
 			font-weight: lighter;
@@ -169,20 +172,20 @@ a{
 			}
 			background: $oc-gray-0;
 			opacity: 0;
-			transition: all 0.25s ease;
-		}
-	}
-
-	&.nuxt-link-exact-active{
-		color: $oc-gray-0;
-		>.link-text::after{
-			opacity: 1;
-			transition: all 1s ease;
-			@include touch{
-				transition: all 0.3s ease;
-			}
+			transition: opacity 0.25s ease;
 		}
 	}
 }
+
+.router-links>a.nuxt-link-exact-active{
+		color: $oc-gray-0;
+		>.link-text::after{
+			opacity: 1;
+			transition: opacity 1s ease;
+			@include touch{
+				transition: opacity 0.3s ease;
+			}
+		}
+	}
 
 </style>

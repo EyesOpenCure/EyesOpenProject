@@ -141,9 +141,10 @@ export default {
 		flex-direction: column;
 		align-items: center;
 		//filter: drop-shadow(0px 4px 4px rgba(0,0,0,.25));
+		font-weight: 300;
 		&__title{
 			//background: white;
-			font-weight: 300;
+			//font-weight: 300;
 			@include mobile{
 				font-size: 2rem;
 			}
