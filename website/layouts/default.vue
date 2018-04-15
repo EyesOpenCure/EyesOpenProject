@@ -21,7 +21,7 @@ export default{
 .default-template {
   position: relative;
   min-height: 100vh;
-  font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   background-attachment: fixed;
   color: $oc-gray-7;

@@ -14,6 +14,7 @@
         <p>
           Whether you have a background in biology, chemistry, physics, engineering, or even are just casually interested in the project, we would love your help.<br>
         </p>
+        <hr>
         <p class="final-p">
           Let's cure blindness together.
         </p>
@@ -47,19 +48,26 @@ export default {
 .container{
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+  justify-content: center;
+  align-items: center;
 	max-width: 800px;
-	font-size: 1.125em;
+	font-size: 1.25em;
 	text-align: center;
 }
 
 p{
 	color: $oc-gray-7;
 	margin: 1rem;
+	font-weight: 400;
+}
+
+hr{
+  width: 50%;
 }
 
 .final-p{
-	color: $oc-gray-9;
-	font-weight: bolder;
+  position: relative;
+  color: $oc-gray-9;
+  font-weight: 500;
 }
 </style>

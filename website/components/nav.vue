@@ -2,18 +2,17 @@
   
   <div :class="{'scrolled' : scrollPos}" class="component-nav">
     <div class="container">
-      <!--<img class="logo" src="http://via.placeholder.com/350x150?text=Placeholder">-->
-      <nuxt-link :to="'/'" class="logo-and-project-name">
-        <img class="logo" src="~assets/images/eye.svg">
-        <div class="project-name">OpenEYS</div>
-      </nuxt-link>
-      <div class="nav-spacer"/>
       <div :class="{'is-active' : showTouchNav}" class="navbar-burger" @click="showTouchNav = !showTouchNav">
         <span/>
         <span/>
         <span/>
       </div>
-      <div :class="{showTouchNav}" class="router-links">
+      <nuxt-link :to="'/'" :class="{'is-hidden-touch' : this.$route.name == 'index'}" class="logo-and-project-name">
+        <div class="project-name">OpenEYS</div>
+      </nuxt-link>
+      <div class="nav-spacer"/>
+
+      <div :class="{showTouchNav}" class="router-links" @click="showTouchNav = false">
         <nuxt-link :to="'/'"><span class="link-text">Home</span></nuxt-link>
         <nuxt-link :to="'/whitepaper'"><span class="link-text">Whitepaper</span></nuxt-link>
         <nuxt-link :to="'/contribute'"><span class="link-text">Contribute</span></nuxt-link>
@@ -26,21 +25,52 @@
 </template>
 
 <script>
+//const navEl = document.querySelector(".component-nav")
 export default {
 	data: () => ({
 		showTouchNav: false,
 		scrollPos : 0
 	}),
-	watch: {
-		'$route' () {
-			this.showTouchNav = false
+	methods: {
+		setLinkColor (routeName = this.$route.name){
+			if(routeName == "index"){
+				this.$el.style.setProperty("--inactive-color",getComputedStyle(this.$el).getPropertyValue("--inactive-color--dark"))
+				this.$el.style.setProperty("--active-color",getComputedStyle(this.$el).getPropertyValue("--active-color--dark"))
+			}else{
+				this.$el.style.setProperty("--inactive-color",getComputedStyle(this.$el).getPropertyValue("--inactive-color--light"))
+				this.$el.style.setProperty("--active-color",getComputedStyle(this.$el).getPropertyValue("--active-color--light"))
+			}
 		}
-	}
+	},
+	mounted(){
+		this.setLinkColor()
+		window.addEventListener("scroll", e => {
+			this.scrollPos = window.scrollY
+		})
+	},
+	watch: {
+		'$route' (to) {
+			this.setLinkColor(to.name)
+		}
+	},
 }
 </script>
 
 <style scoped lang="scss">
 @import "~assets/css/variables.scss";
+
+.component-nav{
+	--inactive-color--dark: #ced4da; //4
+	--active-color--dark: #f8f9fa; //0
+
+	--inactive-color--light: #868e96; //6
+	--active-color--light: #495057; //7
+
+	--inactive-color: #aaa;
+	--active-color: #aaa;
+	//border-bottom: 1px solid rgba(128,128,128,0.75);
+	//filter: drop-shadow(0px 4px 8px rgba(0,0,0,0.25));
+}
 
 .component-nav{
 	position: fixed;
@@ -49,12 +79,16 @@ export default {
 	width: 100%;
 	height: 3rem;
 	z-index: 99;
-	//background: rgba(78, 131, 151,0.85);
-	background: #52667a;
-	//background: $oc-gray-4;
-	color: $oc-gray-2;
+	background: transparent;
 	padding: 0rem;
-	box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+	transition: all 0.5s ease;
+}
+
+.scrolled{
+	background: $oc-gray-0;
+	//box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
+	//border-bottom: 1px solid #aaa;
 }
 
 .container{
@@ -63,30 +97,26 @@ export default {
 	justify-content: flex-start;
 	align-items: center;
 	height: 100%;
-	@include touch{
-		padding: 0 0 0 1rem;
-	}
+	width: 100%;
+	max-width: 1920px;
+}
+
+.navbar-burger>span{
+	background: var(--active-color);
 }
 
 .logo-and-project-name{
 	width: auto !important; //sorry
 	height: 100%;
-	filter: drop-shadow(0px 0px 8px rgba(0,0,0,0.5));
 	display: flex;
 	justify-content: flex-start;
-}
-
-.logo{
-	height: 100%;
-	object-fit: contain;
-	object-position: left center;
-	filter: invert(1);
-}
-
-.project-name{
-	font-weight: 500;
-	font-size: 1.5rem;
-	margin-left: 0.5rem;
+	>.project-name{
+		font-weight: 300;
+		font-size: 1.5rem;
+		padding: 0 1rem;
+		color: var(--active-color);
+		transition: color 1s ease;
+	}
 }
 
 .nav-spacer{
@@ -100,25 +130,28 @@ export default {
 		display: flex;
 		align-items: center;
 		height: 100%;
+		font-weight: 500;
 	}
 	@include touch{
-		padding-top: 1rem;
 		z-index: -10;
 		position: absolute;
-		right: 0;
-		top: 100%;
-		width: 100%;
-		height: 100vh;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		background: rgba(82, 102, 122,1);
-		//box-shadow: 0px 4px 8px rgba(0,0,0,0.5);
-		transform: translateY(-100%);
-		transition: transform 0s ease-out;
+		left: 0;
+		//top: calc(100% + 3rem);
+		top: 100%;
+		//height: calc(100vh - 3rem);
+		padding: 1rem 0;
+
+		//background: rgba(82, 102, 122,1);
+		background: rgba(255,255,255,0.95);
+		transform: translateX(-100%);
+		transition: transform 0.25s ease-in, box-shadow 0.5s ease;
 		&.showTouchNav{
-			//display:flex;
-			transform: translateY(0);
+			transition: transform 0.25s ease-out;
+			transform: translateX(0);
+			box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.25);
 		}
 	}
 }
@@ -127,18 +160,24 @@ a{
 	position: relative;
 	display: flex;
 	align-items: center;
-	color: $oc-gray-4;
-	padding: 0 2rem;
-	transition: all 0.25s ease;
+	color: var(--inactive-color);
+	padding: 0 1rem;
+	line-height: 1;
 
 	@include desktop{
 		height: 100%;
 	}
 
 	@include touch{
-		padding: 0.5rem 1.5rem;
-		width: 100%;
-		justify-content: flex-end;
+		padding: 0;
+		justify-content: flex-start;
+
+		color: var(--active-color--light) !important;
+		
+		font-size: 1rem;
+		>.link-text{
+			padding: 1rem 4rem 1rem 2rem;
+		}
 		&:focus{
 			outline: 0;	
 		}
@@ -146,40 +185,32 @@ a{
 
 	>.link-text{
 		position: relative;
-		font-size: 1.25rem;
-		@include touch{
-			font-size: 1.5rem;
-			font-weight: lighter;
-		}
+		transition: color 1s ease;
 		&::after{
 			content: "";
 			position: absolute;
 			width: 100%;
 			height: 2px;
-			top: 100%;
+			top: calc(100% + 2px);
 			left: 0;
-			@include touch{
-				width: 8px;
-				height: 8px;
-				top: calc(50% - 4px);
-				left: -16px;
-				border-radius: 50%;
-			}
-			background: $oc-gray-0;
+			transition: all 1s ease;
+			background-color: var(--inactive-color);
 			opacity: 0;
-			transition: all 0.25s ease;
+			@include touch{
+				width: 4px;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: var(--active-color--light);
+			}
 		}
 	}
+}
 
-	&.nuxt-link-exact-active{
-		color: $oc-gray-0;
-		>.link-text::after{
-			opacity: 1;
-			transition: all 1s ease;
-			@include touch{
-				transition: all 0.3s ease;
-			}
-		}
+.router-links>a.nuxt-link-exact-active{
+	color: var(--active-color);
+	>.link-text::after{
+		opacity: 1;
 	}
 }
 
