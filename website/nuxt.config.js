@@ -4,9 +4,14 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const glob = require("glob")
 const path = require("path")
 */
+//const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
 const PurgecssPlugin = require('purgecss-webpack-plugin')
 const glob = require('glob-all')
 const path = require('path')
+
+const webpack = require("webpack")
+
+
 
 module.exports = {
 	head: {
@@ -31,11 +36,9 @@ module.exports = {
 		router: {
 			mode: 'history'
 		},
-		/*
 		analyze: {
 			analyzerMode: 'static'
 		},
-		*/
 		/*
 		babel: {
 			plugins: ["syntax-dynamic-import","transform-object-rest-spread"],
@@ -72,7 +75,7 @@ module.exports = {
 				],
 				exclude: /(node_modules)/
 			})
-			if (true) { // need to have this for testing for now
+			if (isServer) { // need to have this for testing for now
 				// Remove unused CSS using purgecss. See https://github.com/FullHuman/purgecss
 				// for more information about purgecss.
 				config.plugins.push(
@@ -86,20 +89,19 @@ module.exports = {
 						whitelistPatterns: [/^transition-page.+/]
 					})
 				)
-				//config.plugins.push(new OptimizeCssAssetsPlugin())
+			}
+			if(isClient){
+				config.plugins.push(
+					new webpack.IgnorePlugin(/^(axios|marked)$/)
+				)
 			}
 		},
-		/*
 		plugins: [
-			new PurifyCSSPlugin({
-				styleExtensions: [".css", ".sass", ".scss"],
-				paths: glob.sync(path.join('{layouts/*.vue,pages/*.vue,components/*.vue}')),
-				//paths: glob.sync(path.join(__dirname, '/build/*.js')),
-				verbose: true
-			}),
-			//new OptimizeCssAssetsPlugin()
+			//new OptimizeCssAssetsPlugin(),
+			new webpack.optimize.LimitChunkCountPlugin({
+				maxChunks: 4 //HACK: don't change this if you don't know what you are doing. In Nuxt 1.4 with 1 layout this will put all pages in 1 chunk
+			})
 		],
-		*/
 		postcss: {
 			plugins: {
 				'postcss-custom-properties': false
@@ -108,9 +110,7 @@ module.exports = {
 		extractCSS: true
 	},
 	transition: {
-		name: 'transition-page',
-		//mode: null,
+		name: 'transition-page'
 	},
-	loading: false,
-	//extractCSS: true
+	loading: false
 }

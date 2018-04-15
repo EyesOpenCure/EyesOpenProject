@@ -2,27 +2,10 @@
   <div class="component">
     <div class="section">
       <div class="container">
-        <div class="content" v-html="tasksHTML"/>
+        <div class="content" v-html="$store.state.tasksHTML"/>
       </div>
     </div>
-  </div>
-</template>
-
-<script>
-export default {
-	data: () => ({
-		tasksHTML: ""
-	}),
-	// TODO: this has to be changed. JS users still load marked and axios, even though the text has already been loaded by the server
-	async asyncData (context) {
-		const marked = require("marked")
-		const axios = require("axios")
-		let { data } = await axios.get("https://raw.githubusercontent.com/wiki/EyesOpenCure/EyesOpenProject/List-of-Open-and-Ongoing-Tasks.md")
-		data = data.replace(/##/gi,"\n##") //HACK: current formatting in wiki is not 100% compatible with "marked" parsing
-		return {tasksHTML: marked(data)}
-	}
-}
-</script>
+</div></template>
 
 <style lang="scss" scoped>
 @import "~assets/css/variables.scss";
