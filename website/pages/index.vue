@@ -76,14 +76,16 @@ export default {
 }
 
 .component{
+	position: relative;
 	background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  color: $oc-gray-2;
+	color: $oc-gray-2;
+	margin-top: -3rem;
 }
 
 .background{
 	z-index: 5;
 	position: absolute;
-	background-image: url("~assets/images/eye_cropped_gray_alpha_contrast_tiny.jpg");
+	background: url("~assets/images/eye_cropped_gray_alpha_contrast_tiny.jpg");
 	
 	//background: linear-gradient(90deg,transparent,#111);
 	background-size: cover;
@@ -97,6 +99,7 @@ export default {
 }
 
 .background-rainbow{
+	//display: none;
 	z-index: 6;
 	position: absolute;
 	top: 0;
